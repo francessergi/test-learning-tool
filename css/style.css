@@ -1,0 +1,27 @@
+* {
+    border: 1px solid transparent;
+}
+
+body {
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.paraula {
+    padding: 1em;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1em;
+    box-shadow: 5px 5px 30px 5px;
+}
+
+#row-central {
+    padding: 1em;
+}
