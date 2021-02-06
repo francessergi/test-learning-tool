@@ -41,7 +41,22 @@ h2 {
     padding: 1em;
 }
 
-div#answers,
-div#rooster {
+div#answers {
     border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0em;
+    }
+    .container {
+        border: none;
+        border-radius: 20px;
+        padding: 1em;
+        box-shadow: none;
+    }
+    div {
+        text-align: center;
+    }
 }

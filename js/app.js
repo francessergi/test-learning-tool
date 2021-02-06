@@ -185,8 +185,6 @@ function resetAll() {
     carregaTest();
 }
 
-
-
 function evalue() {
     var eAnswer = document.getElementsByClassName('answer');
     if (lContainer.childElementCount - 1 != target.length) {
