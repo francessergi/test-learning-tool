@@ -12,30 +12,34 @@
     <script src="./js/app.js"></script>
 </head>
 
-<body onload="carregaTest()">
+<body onload="select()">
     <div class="container">
-        <div class="row">
-            <div class="col-xl">
+        <div class="row justify-content-center">
+            <div class="col-sm-auto">
                 <h1>Test</h1>
+                <select name="opcions" id="tests" class="form-control" onchange="escullTest(this)">
+                    <option value="" hidden>Selecciona Test</option>
+                    <option value=""> </option>
+                </select>
             </div>
         </div>
         <div class="row" id="row-central">
             <div class="col-sm" id="questions">
-                <h2>Questions</h2>
+                <h2>Español</h2>
             </div>
             <div class="col-sm" id="answers">
-                <h2>Answers</h2>
+                <h2>Respuestas</h2>
             </div>
             <div class="col-sm" id="rooster">
-                <h2>Options</h2>
+                <h2>Coreano</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-auto">
-                <button type="button" class="btn btn-danger" onclick="reset()">Reset</button>
+                <button type="button" class="btn btn-danger" onclick="resetAll()">Reset</button>
             </div>
             <div class="col-md-auto">
-                <button type="button" class="btn btn-primary" onclick="evalue()">Evalue</button>
+                <button type="button" class="btn btn-primary" onclick="evalue()">Evaluar</button>
             </div>
         </div>
     </div>
